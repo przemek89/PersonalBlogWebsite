@@ -1,0 +1,85 @@
+.mainPage {
+    border: 2px solid blanchedalmond;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 15vh 10vh 75vh;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "nav nav nav nav"
+    "snav main main main"
+    "ft ft ft ft"
+    ;
+}
+
+.header {
+    border: 2px solid blue;
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationBar {
+    border: 2px solid red;
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sideNavigation {
+    border: 2px solid yellow;
+    grid-area: snav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content {
+    border: 2px solid green;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+    "1 2"
+    "3 4"
+}
+
+.box {
+    border: 2px solid chartreuse;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 36px;
+    padding: 24px;
+}
+
+#1 {
+   grid-area: 1; 
+}
+
+#2 {
+    grid-area: 2; 
+ }
+
+ #3 {
+    grid-area: 3; 
+ }
+
+ #4 {
+    grid-area: 4; 
+ }
+
+.footer {
+    border: 2px solid black;
+    grid-area: ft;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
