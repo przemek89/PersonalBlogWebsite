@@ -1,5 +1,5 @@
 .mainPage {
-    border: 2px solid blanchedalmond;
+    background-color: #3b3b3b;
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -11,14 +11,23 @@
     "snav main main main"
     "ft ft ft ft"
     ;
+    font-family: Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 8px;
+    color: black;
 }
 
 .header {
-    border: 2px solid blue;
     grid-area: hd;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: lightgrey;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: black;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 20px;
 }
 
 .navigationBar {
