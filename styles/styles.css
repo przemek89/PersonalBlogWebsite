@@ -62,8 +62,15 @@ h2 {
     font-size: 1.5em;
 }
 
+h3 {
+    display: flex;
+    width: 100%;
+    height: 5%;
+}
+
 .navigationBar {
     background: black;
+    font-size: 2em;
     grid-area: nav;
     display: flex;
     flex-direction: row;
@@ -74,6 +81,7 @@ h2 {
 
 .sideNavigation {
     background: black;
+    font-size: 1.5em;
     grid-area: snav;
     display: flex;
     flex-direction: column;
@@ -87,8 +95,26 @@ a {
     text-decoration: transparent;
 }
 
-.sideNavLink {
+.sideNavLinkContainer {
+    display: flex;
+    width: 100%;
+    height: 5%;
     border-bottom: 1px groove rgb(230, 230, 230);
+}
+
+.sideNavLink {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.sideNavImg {
+    height: 100%;
+}
+
+.navLink {
+    border-radius: 10px;
+    color: rgb(230, 230, 230);
+    padding: 20px;
 }
 
 .content {
@@ -104,13 +130,27 @@ a {
 .box {
     border-radius: 20px;
     background: linear-gradient(90deg, rgb(190, 170, 0) 10%, rgb(255, 255, 255) 40%, rgb(190, 170, 0) 100%);
-    color: #111111;
+    font-size: 3em;
+    font-weight: 500;
     border: 2px ridge rgb(230, 230, 230);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px;
+    margin: 72px;
     padding: 24px;
+}
+
+.legia {
+    background-image: url(../images/stadion.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.match {
+    background-image: url(../images/latestGame.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 #1 {
@@ -119,7 +159,7 @@ a {
 
 #2 {
     grid-area: 2;
- }
+    }
 
  #3 {
     grid-area: 3;
@@ -130,7 +170,9 @@ a {
  }
 
 .postLink {
-    color: #111111;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px #111111;
+    text-align: end;
 }
 
 .footer {
