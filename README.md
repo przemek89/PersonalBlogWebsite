@@ -24,7 +24,7 @@ Following colour palette was used in this project:
 - gold - rgb(190, 170, 0)
 - dark grey - #111111
 
-### Typogrphy
+### Typography
 - Poppins font family was used through entire project
 - Default font size was set to 8px
 - Other font sizes used were relative, in relation to default font size:
