@@ -179,9 +179,11 @@ a {
     background: black;
     grid-area: ft;
     display: flex;
+    flex-direction: column;
     justify-content: left;
-    align-items: center;
+    align-items: left;
     border-top: 1.5px ridge rgb(230, 230, 230);
+    font-size: 1.25em;
 }
 
 th, td {
