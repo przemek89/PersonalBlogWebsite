@@ -3,192 +3,231 @@
     src: url(../fonts/Poppins-Regular.ttf);
 }
 
-.mainPage {
-    background: #111111;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 15vw 85vw;
-    grid-template-rows: 15vh 10vh 75vh;
-    grid-template-areas:
-    "img hd hd hd"
-    "nav nav nav nav"
-    "snav main main main"
-    "ft ft ft ft"
-    ;
-    font-family: Poppins ,'Segoe UI', Tahoma, Verdana;
-    font-size: 8px;
-    color: rgb(230, 230, 230);
-}
-
-.headerImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: img;
-}
-
-#headerImage {
-    width: 50%;
-    height: 80%;
-}
-
-.header {
-    grid-area: hd;
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    background: #111111;
-    text-transform: uppercase;
-    font-family: Poppins, 'Segoe UI';
-    font-size: 2.5em;
-    padding: 16px;
-}
-
-h1,
-h2 {
-    display: flex;
-    position: relative;
-    height: 80%;
-    background: -webkit-linear-gradient(left, rgb(190, 170, 0) 10%, rgb(255, 255, 255) 40%, rgb(190, 170, 0) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-h2 {
-    font-size: 1.5em;
-}
-
-h3 {
-    display: flex;
-    width: 100%;
-    height: 5%;
-}
-
-.navigationBar {
-    background: black;
-    font-size: 2em;
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    border-bottom: 1.5px ridge rgb(230, 230, 230);
-}
-
-.sideNavigation {
-    background: black;
-    font-size: 1.5em;
-    grid-area: snav;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: left;
-    border-right: 1.5px ridge rgb(230, 230, 230);
-}
-
-a {
-    color: rgb(230, 230, 230);
-    text-decoration: transparent;
-}
-
-.sideNavLinkContainer {
-    display: flex;
-    width: 100%;
-    height: 5%;
-    border-bottom: 1px groove rgb(230, 230, 230);
-}
-
-.sideNavLink {
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-.sideNavImg {
-    height: 100%;
-}
-
-.navLink {
-    border-radius: 10px;
-    color: rgb(230, 230, 230);
-    padding: 20px;
-}
-
-.content {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 50%);
-    grid-template-areas:
-    "1 2"
-    "3 4"
-}
-
-.box {
-    border-radius: 20px;
-    background: linear-gradient(90deg, rgb(190, 170, 0) 10%, rgb(255, 255, 255) 40%, rgb(190, 170, 0) 100%);
-    font-size: 3em;
-    font-weight: 500;
-    border: 2px ridge rgb(230, 230, 230);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 72px;
-    padding: 24px;
-}
-
-.legia {
-    background-image: url(../images/stadion.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.match {
-    background-image: url(../images/latestGame.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#1 {
-   grid-area: 1;
-}
-
-#2 {
-    grid-area: 2;
+@media(min-height:200px) {
+     .mainPage {
+        background: #111111;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 15vw 85vw;
+        grid-template-rows: 15vh 10vh 75vh;
+        grid-template-areas:
+        "img hd hd hd"
+        "nav nav nav nav"
+        "snav main main main"
+        "ft ft ft ft"
+        ;
+        font-family: Poppins ,'Segoe UI', Tahoma, Verdana;
+        font-size: 8px;
+        color: rgb(230, 230, 230);
     }
 
- #3 {
-    grid-area: 3;
- }
+    .headerImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: img;
+    }
 
- #4 {
-    grid-area: 4;
- }
+    #headerImage {
+        width: 50%;
+        height: 80%;
+    }
 
-.postLink {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 5px #111111;
-    text-align: end;
+    .header {
+        grid-area: hd;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background: #111111;
+        text-transform: uppercase;
+        font-family: Poppins, 'Segoe UI';
+        font-size: 2.5em;
+        padding: 16px;
+    }
+
+    h1,
+    h2 {
+        display: flex;
+        position: relative;
+        height: 80%;
+        background: -webkit-linear-gradient(left, rgb(190, 170, 0) 10%, rgb(255, 255, 255) 40%, rgb(190, 170, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        display: flex;
+        width: 100%;
+        height: 5%;
+    }
+
+    .navigationBar {
+        background: black;
+        font-size: 2em;
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1.5px ridge rgb(230, 230, 230);
+    }
+
+    .sideNavigation {
+        background: black;
+        font-size: 1.5em;
+        grid-area: snav;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+        border-right: 1.5px ridge rgb(230, 230, 230);
+    }
+
+    a {
+        color: rgb(230, 230, 230);
+        text-decoration: transparent;
+    }
+
+    .sideNavLinkContainer {
+        display: flex;
+        width: 100%;
+        height: 5%;
+        border-bottom: 1px groove rgb(230, 230, 230);
+    }
+
+    .sideNavLink {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .sideNavImg {
+        height: 100%;
+    }
+
+    .navLink {
+        border-radius: 10px;
+        color: rgb(230, 230, 230);
+        padding: 20px;
+    }
+
+    .content {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+        "1 2"
+        "3 4"
+    }
+
+    .box {
+        border-radius: 20px;
+        background: linear-gradient(90deg, rgb(190, 170, 0) 10%, rgb(255, 255, 255) 40%, rgb(190, 170, 0) 100%);
+        font-size: 3em;
+        font-weight: 500;
+        border: 2px ridge rgb(230, 230, 230);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 72px;
+        padding: 24px;
+    }
+
+    .legia {
+        background-image: url(../images/stadion.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .match {
+        background-image: url(../images/latestGame.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #1 {
+    grid-area: 1;
+    }
+
+    #2 {
+        grid-area: 2;
+        }
+
+    #3 {
+        grid-area: 3;
+    }
+
+    #4 {
+        grid-area: 4;
+    }
+
+    .postLink {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 5px #111111;
+        text-align: end;
+    }
+
+    .footer {
+        background: black;
+        grid-area: ft;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        border-top: 1.5px ridge rgb(230, 230, 230);
+        font-size: 1.25em;
+    }
+
+    th, td {
+        border-bottom: 1px solid rgb(230, 230, 230);
+        padding: 5px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .socialMediaLink {
+        height: 2vh;
+        width: 4vw;
+        padding: 5px;
+        display: inline-flex;
+    }
+
+    .socialMediaImage {
+        width: 100%;
+        height: 100%;
+    }
+
+    #facebook {
+        background-image: url(../images/facebook.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #twitter {
+        background-image: url(../images/twitter.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #linkedIn {
+        background-image: url(../images/linked.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    button {
+        height: 100%;
+        width: 100%;
+        border: none;
+        color: rgb(230, 230, 230);
+    }
 }
-
-.footer {
-    background: black;
-    grid-area: ft;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    border-top: 1.5px ridge rgb(230, 230, 230);
-    font-size: 1.25em;
-}
-
-th, td {
-    border-bottom: 1px solid rgb(230, 230, 230);
-    padding: 5px;
-    font-size: 1.5em;
-    text-align: center;
-  }
