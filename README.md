@@ -13,7 +13,7 @@ The Home Page was divided into the following sections:
 - Footer - containing information about used resources
 
 ## Blog Post
-each blog post was built up with the same structure. The only difference is the content of the Content Panel. There a real content for each blog post was added.
+Each blog post was built up with the same structure. The only difference is the content of the Content Panel. There a real content for each blog post was added.
 
 ## Styling
 
