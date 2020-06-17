@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../../fonts/Poppins-Regular.ttf);
+}
+
+@media(max-height:900px) {
+    .article {
+        display: block;
+        padding-left: 1%;
+        background: #111111;
+        font-family: Poppins;
+        grid-area: main;
+        height: 100%;
+        width: 99%;
+        color: rgb(230, 230, 230);
+    }
+
+    .articleHeader1 {
+        background: rgb(230, 230, 230);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        width: 80%;
+        font-size: 2.2em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .articleHeader2 {
+        background: rgb(230, 230, 230);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 5px rgb(190, 170, 0);
+        width: 80%;
+        font-size: 1.75em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 1.5em;
+        width: 80%;
+    }
+
+    #footer {
+        font-size: 1em;
+    }
+
+    .card {
+        border-radius: 5px;
+        border: 1px solid rgb(230, 230, 230);
+        text-align: center;
+        height: 35%;
+        width: 10%;
+    }
+
+    .imageContainer {
+        border-radius: 5px 5px 0 0;
+        background-image: url(../../images/index.png);
+        background-position: center;
+        background-size: cover;
+        height: 150px;
+        width: 100%;
+    }
+
+    .figureCaption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        height: 10%;
+        width: 50%;
+        background: rgb(230, 230, 230);
+        color: #111111;
+    }
+}
+
+@media(min-height:900px) {
+    .article {
+        display: block;
+        padding: 10px;
+        font-family: Poppins;
+        grid-area: main;
+        height: 100%;
+        width: 90%;
+        color: rgb(230, 230, 230);
+    }
+
+    .articleHeader1 {
+        background: rgb(230, 230, 230);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        width: 90%;
+        font-size: 2.2em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .articleHeader2 {
+        background: rgb(230, 230, 230);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 5px rgb(190, 170, 0);
+        width: 90%;
+        font-size: 1.75em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    #footer {
+        font-size: 1em;
+    }
+
+    .card {
+        border-radius: 5px;
+        border: 1px solid rgb(230, 230, 230);
+        text-align: center;
+        height: 35%;
+        width: 10%;
+    }
+
+    .imageContainer {
+        border-radius: 5px 5px 0 0;
+        background-image: url(../../images/index.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+
+    .figureCaption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        height: 10%;
+        width: 50%;
+        background: rgb(230, 230, 230);
+        color: #111111;
+    }
+}
