@@ -1,9 +1,9 @@
 @font-face {
     font-family: Poppins;
-    src: url(../fonts/Poppins-Regular.ttf);
+    src: url(../../fonts/Poppins-Regular.ttf);
 }
 
-@media(min-height:200px) {
+@media(min-height:300px) {
     .article {
         display: inline-block;
         padding: 20px;
@@ -40,5 +40,36 @@
 
     #footer {
         font-size: 1em;
+    }
+
+    .card {
+        border-radius: 5px;
+        border: 1px solid rgb(230, 230, 230);
+        height: 10%;
+        width: 10%;
+        text-align: center;
+    }
+
+    img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .figureCaption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        height: 10%;
+        width: 50%;
+        background: rgb(230, 230, 230);
+        color: #111111;
     }
 }
